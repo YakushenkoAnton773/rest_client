@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "rest-client"
+version = "0.1.0"
+description = "rest client for testing with log"
+authors = ["Yakushenko Anton Aleksandrovich <yakushenkoaa73@gmail.com>"]
+readme = "README.md"
+packages = [{include = "restclient"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.28.1"
+curlify2 = "^2.0.0"
+structlog = "^25.3.0"
+allure-pytest = "^2.14.2"
+swagger-coverage = { git = "https://github.com/YakushenkoAnton773/swagger-coverage-py.git", rev = "master" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
